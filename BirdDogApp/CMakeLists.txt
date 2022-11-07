@@ -18,14 +18,10 @@ INCLUDE_DIRECTORIES(
   )
 
 add_executable (BirdDogPlayer ${APP_SRC})
-
-
-if(SDL_FOUND)
-  target_sources(BirdDogPlayer PRIVATE sdl.cc)
-  target_compile_definitions(BirdDogPlayer PRIVATE HAVE_SDL)
-  target_include_directories (BirdDogPlayer PRIVATE "${SDL_INCLUDE_DIR}")
-  target_link_libraries (BirdDogPlayer PRIVATE ${SDL_LIBRARY})
-endif()
+target_sources(BirdDogPlayer PRIVATE sdl.cc)
+target_compile_definitions(BirdDogPlayer PRIVATE HAVE_SDL)
+target_include_directories (BirdDogPlayer PRIVATE "${SDL_INCLUDE_DIR}")
+target_link_libraries (BirdDogPlayer PRIVATE ${SDL_LIBRARY})
 
 if(MSVC) 
   target_sources(BirdDogPlayer PRIVATE 
@@ -34,7 +30,7 @@ if(MSVC)
   )
 endif()
 
-install (TARGETS BirdDogPlayer DESTINATION ${CMAKE_INSTALL_BINDIR})
+#install (TARGETS BirdDogPlayer DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 if(NOT MSVC)
   # hdrcopy uses internal APIs that are not available when compiled for Windows
