@@ -2,12 +2,11 @@ add_executable (dec265 dec265.cc)
 
 target_link_libraries (dec265 PRIVATE ${PROJECT_NAME})
 
-if(SDL_FOUND)
+
   target_sources(dec265 PRIVATE sdl.cc)
   target_compile_definitions(dec265 PRIVATE HAVE_SDL)
   target_include_directories (dec265 PRIVATE "${SDL_INCLUDE_DIR}")
   target_link_libraries (dec265 PRIVATE ${SDL_LIBRARY})
-endif()
 
 if(MSVC) 
   target_sources(dec265 PRIVATE 

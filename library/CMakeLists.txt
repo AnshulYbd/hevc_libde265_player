@@ -22,9 +22,6 @@ include(CheckFunctionExists)
 
 option(ENABLE_SDL "Enable SDL" ON)
 
-if (ENABLE_SDL)
-	find_package(SDL)
-endif()
 
 find_package(Threads REQUIRED)
 
@@ -72,9 +69,9 @@ option(ENABLE_DECODER "Enable Decoder" ON)
 option(ENABLE_ENCODER "Enable Encoder" OFF)
 
 add_subdirectory (libde265)
-# if (ENABLE_DECODER)
-  # add_subdirectory (dec265)
-# endif()
-# if (ENABLE_ENCODER)
-  # add_subdirectory (enc265)
-# endif()
+if (ENABLE_DECODER)
+  add_subdirectory (dec265)
+endif()
+if (ENABLE_ENCODER)
+  add_subdirectory (enc265)
+endif()
