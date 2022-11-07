@@ -1,0 +1,10 @@
+^D:\MYSPACE\PROJECTS\LIBDE265\DEC265\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/MySpace/Projects/libde265 -BD:/MySpace/Projects/libde265/winbuild --check-stamp-file D:/MySpace/Projects/libde265/winbuild/dec265/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

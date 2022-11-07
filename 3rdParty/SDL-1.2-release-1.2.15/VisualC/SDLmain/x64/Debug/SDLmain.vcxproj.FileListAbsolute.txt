@@ -1,0 +1,1 @@
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\SDLmain\x64\Debug\SDLmain.lib

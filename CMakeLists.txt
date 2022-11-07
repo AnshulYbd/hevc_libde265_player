@@ -1,0 +1,25 @@
+# CMakeLists.txt in live
+
+CMAKE_MINIMUM_REQUIRED(VERSION 3.10)
+
+PROJECT(
+    HEVC_Player
+    VERSION 1.0.0
+    DESCRIPTION "play ndi hevc files/stream."
+    LANGUAGES C CXX
+)
+
+SET(HEVCPLAYER_INCLUDE_PATH ${CMAKE_SOURCE_DIR}/library )
+
+
+# includes
+INCLUDE_DIRECTORIES(
+${HEVCPLAYER_INCLUDE_PATH}
+)
+
+SET(SDL_LIBRARY ${CMAKE_SOURCE_DIR}/3rdParty/SDL-1.2-release-1.2.15/winbuild/Debug)
+SET(SDL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/3rdParty/SDL-1.2-release-1.2.15/include)
+
+ADD_SUBDIRECTORY(3rdParty/SDL-1.2-release-1.2.15)
+ADD_SUBDIRECTORY(library)
+ADD_SUBDIRECTORY(BirdDogApp)

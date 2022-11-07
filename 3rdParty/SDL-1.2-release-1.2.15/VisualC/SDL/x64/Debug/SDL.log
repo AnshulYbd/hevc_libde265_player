@@ -1,0 +1,91 @@
+﻿  SDL_diskaudio.c
+  SDL_dummyaudio.c
+  SDL_audio.c
+  SDL_audiocvt.c
+  SDL_mixer.c
+  SDL_mixer_MMX_VC.c
+  SDL_wave.c
+  SDL_dibaudio.c
+  SDL_dx5audio.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\audio\windx5\SDL_dx5audio.c(69,3): warning C4996: 'GetVersionExA': was declared deprecated
+  SDL_cdrom.c
+  SDL_syscdrom.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\cdrom\win32\SDL_syscdrom.c(174,41): warning C4244: '=': conversion from 'DWORD_PTR' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\cdrom\win32\SDL_syscdrom.c(342,40): warning C4244: '=': conversion from 'DWORD_PTR' to 'DWORD', possible loss of data
+  SDL_cpuinfo.c
+  SDL_active.c
+  SDL_events.c
+  SDL_expose.c
+  SDL_keyboard.c
+  SDL_mouse.c
+  SDL_quit.c
+  SDL_resize.c
+  SDL_rwops.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(126,69): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(151,73): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(115,8): warning C4996: 'GetVersionExA': was declared deprecated
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(340,15): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(350,16): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(392,59): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(412,29): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\file\SDL_rwops.c(417,65): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  SDL_joystick.c
+  SDL_mmjoystick.c
+  SDL_sysloadso.c
+  SDL.c
+  SDL_error.c
+  SDL_fatal.c
+  SDL_getenv.c
+  SDL_iconv.c
+  SDL_malloc.c
+  SDL_qsort.c
+  SDL_stdlib.c
+  SDL_string.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\stdlib\SDL_string.c(1246,30): warning C4244: 'return': conversion from '__int64' to 'int', possible loss of data
+  SDL_syscond.c
+  SDL_thread.c
+  SDL_sysmutex.c
+  SDL_syssem.c
+  SDL_systhread.c
+  SDL_timer.c
+  SDL_systimer.c
+  SDL_nullevents.c
+  Generating Code...
+  Compiling...
+  SDL_nullmouse.c
+  SDL_nullvideo.c
+  SDL_blit.c
+  SDL_blit_0.c
+  SDL_blit_1.c
+  SDL_blit_A.c
+  SDL_blit_N.c
+  SDL_bmp.c
+  SDL_cursor.c
+  SDL_gamma.c
+  SDL_pixels.c
+  SDL_RLEaccel.c
+  SDL_stretch.c
+  SDL_surface.c
+  SDL_video.c
+  SDL_yuv.c
+  SDL_yuv_sw.c
+  SDL_sysevents.c
+  SDL_sysmouse.c
+  SDL_syswm.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\video\wincommon\SDL_syswm.c(223,51): warning C4267: 'function': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Compiling...
+  SDL_wingl.c
+  SDL_dibevents.c
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\video\windib\SDL_dibevents.c(598,59): warning C4244: 'function': conversion from 'WPARAM' to 'int', possible loss of data
+D:\MySpace\Projects\SDL-1.2-release-1.2.15\src\video\windib\SDL_dibevents.c(615,45): warning C4244: '=': conversion from 'WPARAM' to 'Uint16', possible loss of data
+  SDL_dibvideo.c
+  SDL_dx5events.c
+  SDL_dx5video.c
+  SDL_dx5yuv.c
+  Generating Code...
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1363,5): warning MSB8012: TargetPath(D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\x64\Debug\SDL.dll) does not match the Linker's OutputFile property value (D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\SDL\Debug\SDL.dll). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     Creating library D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\x64\Debug\SDL.lib and object D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\x64\Debug\SDL.exp
+  SDL.vcxproj -> D:\MySpace\Projects\SDL-1.2-release-1.2.15\VisualC\x64\Debug\SDL.dll
